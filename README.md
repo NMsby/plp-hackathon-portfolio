@@ -9,7 +9,7 @@ An interactive portfolio website featuring 3D visualizations and animations buil
 This portfolio was created by:
 
 * Nelson Masbayi Muyodi - Web development, 3D implementation, and interactive features
-* Lina Kinya Murithi - Content and design direction
+* Lina Kinya Murithi - Web development, CSS Styling, Content and design direction
 
 **Peer Group 652 - PLP February 2025 Cohort VII**
 
