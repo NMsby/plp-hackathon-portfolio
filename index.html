@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lina Kinya Murithi - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body>
+<!-- Splash Screen -->
+<div class="splash-screen" id="splashScreen">
+    <div class="splash-content">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This portfolio features interactive 3D elements and animations for an immersive experience.</p>
+        <div class="splash-icons">
+            <div>
+                <i class="fas fa-mouse"></i>
+                <p>Mouse recommended</p>
+            </div>
+            <div>
+                <i class="fas fa-desktop"></i>
+                <p>Best on larger screens</p>
+            </div>
+        </div>
+        <p>Feel free to explore and interact with the 3D elements!</p>
+        <button class="splash-button" id="splashButton">Let's Begin</button>
+    </div>
+</div>
+
+<!-- Header & Navigation -->
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">Lina Kinya Murithi</div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section with 3D Background -->
+<section id="home" class="hero">
+    <div id="hero-canvas"></div>
+    <div class="hero-content">
+        <div class="profile-container">
+            <img src="images/profile.jpg" alt="Lina Murithi" class="profile-image">
+        </div>
+        <h1>Lina Kinya Murithi</h1>
+        <p>Medical Microbiologist | Data Analyst | Web Developer | Yoga</p>
+        <div class="hero-btns">
+            <a href="#contact" class="btn btn-primary btn-glow">Get in Touch</a>
+            <a href="#projects" class="btn btn-secondary btn-glow">See My Work</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section fade-in-section lab-grid-bg">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I hold a Bachelor of Science in Medical Microbiology from Jomo Kenyatta University of Agriculture. My experience and expertise encompass medical research, quality control, and data analysis in medical research and diagnostics.</p>
+                <p>My experience in Medical Microbiology inspired interests in data analysis due to roles and usefulness in exploring, interpreting, and visualizing complex medical and research data.</p>
+                <p>Transitioning into web development, I can build clean, simple, and responsive websites via HTML and CSS, which helps merge my analytical skills with design principles.</p>
+                <p>Beyond career pursuits, I am very passionate about health and wellness, particularly yoga, pilates, and meditation. These disciplines help me maintain balance in various facets of my life.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item floating-animation glow-on-hover">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-title">Years Experience</div>
+                </div>
+                <div class="stat-item floating-animation glow-on-hover">
+                    <div class="stat-number">3</div>
+                    <div class="stat-title">Research Projects</div>
+                </div>
+                <div class="stat-item floating-animation glow-on-hover">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-title">Lab Techniques</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3D Skills Section -->
+<section id="skills" class="section section-dark section-animated-bg fade-in-section">
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div id="skills-sphere" class="skills-3d-container"></div>
+            <div class="skills-list">
+                <div class="skill-category glow-on-hover">
+                    <h3>Medical Microbiology</h3>
+                    <ul>
+                        <li>Laboratory analysis</li>
+                        <li>Data collection</li>
+                        <li>Molecular skills</li>
+                        <li>Research methodology</li>
+                        <li>Quality control</li>
+                    </ul>
+                </div>
+                <div class="skill-category glow-on-hover">
+                    <h3>Data Analysis</h3>
+                    <ul>
+                        <li>Excel</li>
+                        <li>SPSS</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Statistical interpretation</li>
+                    </ul>
+                </div>
+                <div class="skill-category glow-on-hover">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Responsive design</li>
+                        <li>JavaScript basics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section fade-in-section lab-grid-bg">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="research">Research</button>
+            <button class="filter-btn" data-filter="data">Data Analysis</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card glow-on-hover" data-category="research">
+                <div class="project-img">
+                    <img src="/api/placeholder/500/300" alt="Medical Research Project">
+                </div>
+                <div class="project-info">
+                    <h3>Antimicrobial Resistance Research</h3>
+                    <p>Research on antimicrobial resistance amongst hospitalized children with severe acute malnutrition.</p>
+                    <div class="project-tech">
+                        <span>Data Collection</span>
+                        <span>Analysis</span>
+                        <span>Reporting</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glow-on-hover" data-category="data">
+                <div class="project-img">
+                    <img src="/api/placeholder/500/300" alt="Data Analysis Project">
+                </div>
+                <div class="project-info">
+                    <h3>Laboratory Cost Analysis</h3>
+                    <p>Excel-based analysis to identify over-used priced supplies, resulting in cost savings.</p>
+                    <div class="project-tech">
+                        <span>Excel</span>
+                        <span>Data Visualization</span>
+                        <span>Cost Analysis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glow-on-hover" data-category="web">
+                <div class="project-img">
+                    <img src="/api/placeholder/500/300" alt="Web Development Project">
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal portfolio website showcasing skills, projects, and professional background.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Three.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="section section-dark section-animated-bg fade-in-section">
+    <div class="container">
+        <h2 class="section-title">Experience & Education</h2>
+        <div id="timeline-container" class="timeline-container"></div>
+        <div class="resume-download">
+            <a href="CV/Lina Kinya Resume.pdf" target="_blank" class="btn btn-primary btn-glow">
+                <i class="fas fa-download"></i> Download Full Resume
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section fade-in-section lab-grid-bg">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:linakinya@gmail.com">linakinya@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+254 703 720 942</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" class="btn btn-primary btn-glow">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Lina Kinya Murithi. All Rights Reserved</p>
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Custom JS Files -->
+<script src="js/main.js"></script>
+<script src="js/three-effects.js"></script>
+</body>
+</html>
