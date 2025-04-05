@@ -4,6 +4,10 @@
 
 An interactive portfolio website featuring 3D visualizations and animations built for the PowerLearnProject Portfolio Challenge Hackathon.
 
+## View Live Demo
+
+The live portfolio can be viewed at: [https://nmsby.github.io/plp-hackathon-portfolio/](https://nmsby.github.io/plp-hackathon-portfolio/)
+
 ## Project Team
 
 This portfolio was created by:
@@ -55,10 +59,6 @@ The enhancements include:
     - `three-effects.js` - 3D visualizations
 - `images/` - Image assets
 - `CV/` - Resume and documents
-
-## View Live Demo
-
-The live portfolio can be viewed at: [https://nmsby.github.io/plp-hackathon-portfolio/](https://nmsby.github.io/plp-hackathon-portfolio/)
 
 ## Setup and Installation
 
